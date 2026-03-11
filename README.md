@@ -11,5 +11,6 @@ this has been semi-public for a while and ive used it in numerous projects since
 fun facts: 
 - voil used to use its font renderer before the custom renderer
 - echo is based on this
+- radium v3 is also based on this
 - epitaph is only 20 euros go buy it at epitaph.wtf
 - i like money
