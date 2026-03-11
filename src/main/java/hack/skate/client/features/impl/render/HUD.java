@@ -49,24 +49,24 @@ public class HUD extends Feature {
 
         if (arrayList.getValue()) {
             List<Feature> enabledFeatures = new ArrayList<>();
-        for (Feature feature : Vevo.featureManager.getFeatures()) {
+        for (Feature feature : Skate.featureManager.getFeatures()) {
             if (feature.isEnabled() && feature != this) {
                 enabledFeatures.add(feature);
             }
         }
 
         enabledFeatures.sort(Comparator.comparingDouble(f -> 
-            -Vevo.fonts.getArial().getWidth(getDisplayText(f), 8)));
+            -Skate.fonts.getArial().getWidth(getDisplayText(f), 8)));
 
         int screenWidth = mc.getWindow().getScaledWidth();
         int y = 2;
 
         for (Feature feature : enabledFeatures) {
             String displayText = getDisplayText(feature);
-            float textWidth = Vevo.fonts.getArial().getWidth(displayText, 8);
+            float textWidth = Skate.fonts.getArial().getWidth(displayText, 8);
             int x = (int) (screenWidth - textWidth - 2);
 
-            Vevo.fonts.getArial().renderWithShadow(
+            Skate.fonts.getArial().renderWithShadow(
                 event.getMatrixStack(),
                 displayText,
                 x,
