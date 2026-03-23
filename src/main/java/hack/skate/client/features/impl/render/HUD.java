@@ -3,6 +3,7 @@ package hack.skate.client.features.impl.render;
 import hack.skate.client.features.Category;
 import hack.skate.client.features.FeatureInfo;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Comparator;
 
